@@ -2,6 +2,7 @@
 #define number_h
 
 #pragma once
+#include "stdafx.h"
 #include<iostream>
 #include<fstream>
 
@@ -10,7 +11,7 @@ using namespace std;
 class Number
 {
 public:
-	Number(int, int) {};
+	Number(int, int);
 	Number() {}
 	void SetNumber(int);
 	void SetBase(int);
@@ -23,6 +24,7 @@ private:
 	int FindNewNumberInP(int, int);
 	void SetNewNumber(int, int);
 	int From10ToP(int, int);
+	char* From10To16(int, int);
 };
 
 #endif
