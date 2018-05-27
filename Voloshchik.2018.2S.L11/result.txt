@@ -1,0 +1,11 @@
+
+
+Palindromes from result.txt:
+1. TheWolframLanguageisahighlydevelopedknowledge
+2. basedlanguagethatunifiesabroadrangeofprogrammingparadigmsandusesitsuniqueconceptofsymbolicprogrammingtoaddanewlevelofflexibilitytotheveryconceptofprogramming
+3. ListsarecentralconstructsintheWolframLanguage
+4. usedtorepresentcollections
+5. arrays
+6. sets
+7. andsequencesofallkinds
+8. k

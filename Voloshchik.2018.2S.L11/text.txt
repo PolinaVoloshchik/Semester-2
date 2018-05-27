@@ -1,0 +1,1 @@
+The Wolfram Language is a highly developed knowledge-based language that unifies a broad range of programming paradigms and uses its unique concept of symbolic programming to add a new level of flexibility to the very concept of programming. Lists are central constructs in the Wolfram Language, used to represent collections, arrays, sets, and sequences of all kinds.
