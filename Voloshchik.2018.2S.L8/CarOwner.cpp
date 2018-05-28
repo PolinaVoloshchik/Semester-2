@@ -352,3 +352,41 @@ bool CarOwner::CarOwner::CheckAmountOfNumbers(int& n, const int C)
 	else
 		return false;
 }
+
+void CarOwner::CarOwner::EnterCarOwner()
+{
+	const int N = 256;
+	char surname[N] = "", firstname[N] = "", secondname[N] = "", country[N] = "", region[N] = "", district[N] = "", city[N] = "", street[N] = "", brand[N] = "";
+	int phone, index, house, flat, carnumber, passport;
+	std::cout << "Enter the surname: ";
+	std::cin.ignore();
+	std::cin.getline(surname, N, '\n');
+	std::cout << "Enter the first name: ";
+	std::cin.getline(firstname, N, '\n');
+	std::cout << "Enter the second name: ";
+	std::cin.getline(secondname, N, '\n');
+	std::cout << "Enter phone number: ";
+	std::cin >> phone;
+	std::cout << "Enter the country: ";
+	std::cin.getline(country, N, '\n');
+	std::cout << "Enter the region: ";
+	std::cin.getline(region, N, '\n');
+	std::cout << "Enter the district: ";
+	std::cin.getline(district, N, '\n');
+	std::cout << "Enter the city: ";
+	std::cin.getline(city, N, '\n');
+	std::cout << "Enter index of the city: ";
+	std::cin >> index;
+	std::cout << "Enter the street: ";
+	std::cin.getline(street, N, '\n');
+	std::cout << "Enter number of the house: ";
+	std::cin >> house;
+	std::cout << "Enter number of the flat: ";
+	std::cin >> flat;
+	std::cout << "Enter the brand of car: ";
+	std::cin.getline(brand, N, '\n');
+	std::cout << "Enter number of the car: ";
+	std::cin >> carnumber;
+	std::cout << "Enter number of the passport of the car: ";
+	std::cin >> passport;
+}

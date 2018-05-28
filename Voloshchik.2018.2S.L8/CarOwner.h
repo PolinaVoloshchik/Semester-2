@@ -7,10 +7,10 @@
 
 namespace CarOwner
 {
-	class CarOwner
+	struct CarOwner
 	{
 	public:
-		CAROWNER_API CarOwner(char*, char*, char*, int, int, char*, char*, char*, char*, char*, int, int, char*, int, int) {};
+		CAROWNER_API CarOwner(char*, char*, char*, int, int, char*, char*, char*, char*, char*, int, int, char*, int, int);
 		CAROWNER_API ~CarOwner();
 
 		CAROWNER_API char* GetSurname() const;
@@ -68,5 +68,6 @@ namespace CarOwner
 		static int* AllocateMemory(int);
 
 		bool CheckAmountOfNumbers(int&, const int);
+		void EnterCarOwner();
 	};
 }
