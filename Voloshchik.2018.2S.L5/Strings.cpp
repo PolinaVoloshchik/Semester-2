@@ -12,12 +12,12 @@ STRINGS_API char** Strings::ObtainWords(char* string, int & n)
 	char** words = new char*[strlen(string) / 2];
 
 	n = 0;
-	char* curword = strpbrk(string, symbols);
+	char* curword = strpbrk(string, symbols); //возвращает указатель первого вхождения любого символа строки symbols в строке string
 	while (curword)
 	{
-		int length = strspn(curword, symbols);
+		int length = strspn(curword, symbols);//возвращает длину начального сегмента строки curword, содержащего только те символы, которые входят в строку symbols
 		words[n] = new char[length + 2];
-		strncpy(words[n], curword, length+1);
+		strncpy(words[n], curword, length+1);//выполняет побайтное копирование length+1 символов из строки  curword в строку words[n]. возвращает значения words[n]
 		words[n][length] = '\0';
 		curword += length;
 		curword = strpbrk(curword, symbols);
